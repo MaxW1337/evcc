@@ -11,6 +11,8 @@ on:
         type: boolean
         default: false
 
+permissions: write-all
+
 jobs:
   sync_latest_from_upstream:
     runs-on: ubuntu-latest
