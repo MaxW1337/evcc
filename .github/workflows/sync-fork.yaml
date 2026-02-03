@@ -36,6 +36,7 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
       with:
+        git_config_pull_rebase: true
         target_sync_branch: master
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.WORKFLOW_TOKEN }}
