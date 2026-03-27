@@ -40,6 +40,7 @@ ENV GOMODCACHE=/root/.cache/go-mod
 # download modules
 COPY go.mod .
 COPY go.sum .
+COPY ocpp-go/ ocpp-go/
 RUN --mount=type=cache,target=${GOMODCACHE} go mod download
 
 # install tools
